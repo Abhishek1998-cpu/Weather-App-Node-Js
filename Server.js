@@ -18,7 +18,7 @@ const server = http.createServer((req, res) => {
   //   res.end();
   if ((req.url = "/")) {
     requests(
-      "http://api.openweathermap.org/data/2.5/weather?q=Chennai&appid={Your OpenWeatherMap API key}&units=metric"
+      "http://api.openweathermap.org/data/2.5/weather?q=Chennai&appid=13eff3032560ad8b3ab8aa4ff3bc93b1&units=metric"
     )
       .on("data", function (chunk) {
         const objdata = JSON.parse(chunk);

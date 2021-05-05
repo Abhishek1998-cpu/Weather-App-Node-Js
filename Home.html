@@ -243,7 +243,11 @@ if (tempStatus == "Sunny") {
 } else if (tempStatus == "Rainy") {
   weathericon.innerHTML =
     "<i class='fas  fa-cloud-rain' style='color: #a4b0be;'></i>";
-} else {
+} 
+else if (tempStatus == "Clear") {
+  weathericon.innerHTML =
+    "<i class='fas  fa-sun' style='color: yellow;'></i>";
+}else {
   weathericon.innerHTML =
     "<i class='fas  fa-cloud' style='color:#f1f2f6;'></i>";
 }
